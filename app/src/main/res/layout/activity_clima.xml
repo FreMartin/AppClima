@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clima">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvClimaP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clima"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:background="@color/bgColor"
+        android:textColor="@color/txtColor"
+        android:paddingVertical="5dp"
+        android:layout_gravity="top"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ivRegresar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/regresar"
+        android:paddingStart="5dp"
+        app:layout_constraintHorizontal_bias="0.03"
+        ></ImageView>
+
+
+    <ImageView
+        android:id="@+id/ivClima"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClimaP"></ImageView>
+
+    <TextView
+        android:id="@+id/tvGrados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Grados"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivClima"></TextView>
+
+    <TextView
+        android:id="@+id/tvCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ciudad"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGrados"></TextView>
+
+    <TextView
+        android:id="@+id/tvClima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Estado climático"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCiudad"></TextView>
+
+    <ImageView
+
+        android:id="@+id/ivBandera"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:paddingStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClima"
+        app:layout_constraintVertical_bias="0.137"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

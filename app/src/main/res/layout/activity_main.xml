@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciudades"
+        android:textSize="40dp"
+        android:fontFamily="serif-monospace"
+        android:background="@color/otroColor"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:layout_gravity="top"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnQuito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#AED32F2F"
+            android:text="Quito"
+            android:textSize="20dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/btnCuenca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F57C00"
+            android:text="Cuenca"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnAmbato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#388E3C"
+            android:text="Ambato"
+            android:textSize="20dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/btnGuayaquil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A36FA9EA"
+            android:text="Guayaquil"
+            android:textSize="20dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/btnLoja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D84315"
+            android:text="Loja"
+            android:textSize="20dp"
+            ></Button>
+    </LinearLayout>
+
+</FrameLayout>
